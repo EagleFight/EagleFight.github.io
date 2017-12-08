@@ -1,207 +1,279 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <title>个人简历</title>
-
-
     <style>
+        html{
 
 
-        #title{
-            color:#F00;
-            font-size:28px
+            height: 100%;
         }
-        .secondTitle{
-
-
-            font-size:18px;
-            background-color:#09F;
-            text-align:center;
-        }
-
-
         body{
-            text-align:center;
-            font-size:16px;
-            font-family:楷体;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            background-image: url(back.jpg)
 
         }
-        ul{
-            text-align:left;}
-        li{
-            text-align:left;}
-        .info{
-            text-align:left;
-            font-size:16px;
+        main{
+            width: 80%;
+            height: 500px;
+            margin:0 auto;
+            /*background-color: orange;*/
+            /*text-align: center;*/
         }
-        td{
-            border-color:#09F;
-        }
-        tr{
-            border-color:#09F;}
 
+
+        section{
+
+
+            width: 400px;
+            height: 150px;
+            background-color:pink;
+            border-radius: 10px;
+            margin: 0 auto;
+            position: relative;
+            line-height: -50px;
+        }
+
+
+
+        /*2n-1 控制所有的奇数位元素*/
+        section:nth-child(2n+1):{
+
+
+            left:-80px;
+
+        }
+
+
+        /*2n控制所有偶数位的元素*/
+        section:nth-child(2n){
+
+
+            left:80px;
+
+        }
+
+
+        section:nth-child(1){
+
+
+
+            background-color: deeppink;
+            /*z-index: 用来设置元素之间的层级关系，值越大越靠上*/
+            z-index: 400;
+            /*rotate()旋转。单位deg
+            正值代表顺时针，负值代表逆时针。*/
+            transform:rotate(3deg)
+
+
+        }
+
+
+
+        section:nth-child(2){
+
+
+
+            background-color: yellow;
+            /*top:-5px;*/
+            z-index: 300;
+            transform: rotate(-1deg);
+
+
+
+
+        }
+
+
+        section:nth-child(3){
+
+
+            background-color:lime;
+            top:-10px;
+            z-index: 200;
+            transform: rotate(1.5deg)
+
+        }
+
+
+        section:nth-child(4){
+
+
+            background-color: yellowgreen;
+            top:-20px;
+            z-index: 100;
+            transform: rotate(-2deg)
+
+        }
+
+
+        section:nth-child(5){
+
+
+            background-color: mistyrose;
+            top:-40px;
+            z-index: 50;
+        }
+
+
+        section:nth-child(6){
+
+
+            background-color: pink;
+            top:-60px;
+            z-index: 1000;
+            transform: rotate(-3deg)
+
+        }
+        #one>h1{
+            position: relative;
+            font-size:45px;
+            font-family: '楷体';
+            float:right;
+            clear:both;
+            top:-20px;
+        }
+        #one>h3{
+
+
+            font-size: 30px;
+            top:10px;
+            padding: 30px;
+        }
+        div{
+            position: relative;
+            background-color: brown;
+            width: 20px;
+            height: 20px;
+            top:-10px;
+            margin:20px;
+            border-radius: 100%;
+
+
+        }
+        #two>h1{
+            margin: 0 0 0 20px;
+        }
+        #two>h5{
+            margin: 0 0 0 20px;
+            /*font-color:red;*/
+        }
+
+        #three>h1{
+            margin: 10px 0 0 300px;
+
+
+        }
+        #three>h5{
+            margin: 0 0 0 20px;
+        }
+        #four>h1{
+            margin: 10px 0 0 150px;
+
+
+        }
+        #four>h5{
+            margin: 5px 0 0 150px;
+        }
+        #four>div{
+            position: relative;
+            top:-30px;
+        }
+        #five>h1{
+            /*margin: 0 0 0 10px;*/
+            /*float:right*/
+            position:relative;
+            left:300px;
+            top: -30px;
+
+
+        }
+        #five>h5{
+            margin: 0 auto;
+            position: relative;
+            top:-30px;
+            right: -20px;
+        }
+        #five>div{
+            position: relative;
+            top:120px;
+        }
+        #six>div{
+            position: relative;
+            top:120px;
+        }
+        p{
+            margin: 0 auto;
+            position: relative;
+            left: 250px;
+            /*float: right;*/
+            /*text-align: center;*/
+
+
+        }
+        #six>h1{
+            margin: 0 auto;
+            position: relative;
+            top:-20px;
+            left:10px;
+        }
     </style>
-
-
 </head>
+<body>
+<main>
+    <section id="one">
+        <h1>我的简历</h1>
+        <h3>杨   过</h3>
+        <div></div>
+    </section>
+    <section id="two">
+        <h1>个人信息</h1>
+        <h5>性别：男</h5>
+        <h5>年龄：35</h5>
+        <h5>身高：180cm</h5>
+        <h5>媳妇：&#10084;小龙女</h5>
+        <div></div>
+
+    </section>
+    <section id="three">
+        <h1>教育经历</h1>
+        <h5>&#10168;蛤蟆功</h5>
+        <h5>&#10168;玉女心经</h5>
+        <h5>&#10168;玄铁重剑</h5>
+        <h5>&#10168;黯然销魂掌</h5>
+        <div></div>
 
 
-<body >
+    </section>
+    <section id="four">
+        <h1>学习经历</h1>
+        <h5>&#8226;欧阳锋教师蛤蟆功 </h5>
+        <h5>&#8226;自创黯然销魂掌</h5>
+        <h5>&#8226;小龙女教授玉女心经</h5>
+        <h5>   &#8226;雕兄教授玄铁重剑</h5>
+        <div></div>
 
+    </section>
+    <section id="five">
+        <div></div>
+        <h1>联系方式</h1>
+        <h5>E-mail   &#9993;:2428707967@qq.com</h5>
+        <h5>Phone    &#9743;：18002473605</h5>
+        <h5>Adress：钟南山下，活死人墓</h5>
 
-<table  align="center" width="660" border="0" bordercolor="#00CCFF"  frame="box">
-    <caption id="title"   >
-        <strong>  个人简历</strong>
-    </caption>
-    <tr>
-        <td colspan="5" class="secondTitle">基本资料</td>
-    </tr>
-    <tr>
-        <td width="116">姓&nbsp;名</td>
-        <td width="134"></td>
-        <td width="79">性&nbsp;别</td>
-        <td width="166">男</td>
-        <td width="129" rowspan="5"><img  src="yanyiwei.jpg" width="105" height="150" alt="1" /></td>
-    </tr>
-    <tr>
-        <td>年&nbsp;龄</td>
-        <td>23</td>
-        <td>籍贯</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>民&nbsp;族</td>
-        <td>汉</td>
-        <td>政治面貌</td>
-        <td>团员</td>
-    </tr>
-    <tr>
-        <td>毕业学校</td>
-        <td colspan="3"></td>
-    </tr>
-    <tr>
-        <td>专&nbsp;业</td>
-        <td>计算机科学与技术</td>
-        <td>学&nbsp;历</td>
-        <td>本科</td>
-    </tr>
-    <tr>
-        <td colspan="5" class="secondTitle">个人技能</td>
-    </tr>
-    <tr>
-        <td>个人技能</td>
-        <td colspan="4" >
-            <ul >
-                <li >熟练掌握Java</li>
-                <li >熟练掌握SQl Server</li>
-                <li >熟练掌握Oracle</li>
-            </ul>
+    </section>
+    <section id="six">
+        <div></div>
+        <h1>求职意向</h1>
+        <p>&#9733;高级全栈工程师</p>
+        <p>&#9733;自动化测试</p>
+        <p>&#9733;自动化运维</p>
 
-        </td>
-    </tr>
-    <tr>
-        <td>计算机水平</td>
-        <td colspan="4">
-            <ul  >
-                <li >计算机二级</li>
-                <li >程序员认证</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>语言能力</td>
-        <td colspan="4">
-            英语：四级
-        </td>
-    </tr>
-    <tr>
-        <td>个人专长</td>
-        <td colspan="4" class="info">
-            极其爱敲代码
+    </section>
 
-        </td>
-    </tr>
-    <tr>
-        <td colspan="5" class="secondTitle">项目经验</td>
-    </tr>
-    <tr><strong>
-        <td>年月</td>
-        <td>项目名称</td>
-        <td colspan="3">项目说明</td> </strong>
-    </tr>
-    <tr>
-        <td>2013年</td>
-        <td>学生管理系统</td>
-        <td colspan="3">
-            实现管理员登录注册<br />
-            实现学生的增删改查
-
-        </td>
-    </tr>
-    <tr>
-        <td>2014年</td>
-        <td>二手房交易系统</td>
-        <td colspan="3">
-            实现用户的注册登录<br />
-            实现管理员帐号<br />
-            实现用户购买寄售房屋 房屋信息的显示（分页）<br />
-        </td>
-    <tr>
-        <td>2015年</td>
-        <td>捕鱼达人</td>
-        <td colspan="3">
-            捕鱼达人基本功能的实现
-        </td>
-    </tr>
-    <tr>
-        <td colspan="5" class="secondTitle">实践与实习</td>
-    </tr>
-    <tr>
-        <td>2011.6-2012.9</td>
-        <td colspan="4"></td>
-    </tr>
-    <tr>
-        <td>2012.6-2013.9</td>
-        <td colspan="4"></td>
-    </tr>
-    <tr>
-        <td>2014.6-2015.9</td>
-        <td colspan="4"></td>
-    </tr>
-    <tr>
-        <td>2015.9-2015.1</td>
-        <td colspan="4"></td>
-    </tr>
-    <tr>
-        <td colspan="5" class="secondTitle">个人爱好</td>
-    </tr>
-    <tr>
-        <td>兴趣爱好</td>
-        <td colspan="4">游戏、篮球</td>
-    </tr>
-    <tr>
-        <td colspan="5" class="secondTitle">自我评价</td>
-    </tr>
-    <tr>
-        <td colspan="5">
-        </td>
-    </tr>
-    <tr>
-        <td colspan="5" class="secondTitle">联系方式</td>
-    </tr>
-    <tr>
-        <td>移动电话</td>
-        <td>157***</td>
-        <td>QQ</td>
-        <td colspan="2">450**</td>
-    </tr>
-    <tr>
-        <td>e-mail</td>
-        <td>xiaoshidebukuai@163.com</td>
-        <td>CSDN</td>
-        <td colspan="2">xiaoshidetaikuai20</td>
-    </tr>
-</table>
+</main>
 </body>
 </html>
