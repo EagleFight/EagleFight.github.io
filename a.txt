@@ -10,3 +10,15 @@
 <p id="1a">哈哈1<p>
 <p id="1a">哈哈1<p>
 <p id="1a">哈哈1<p>
+<VirtualHost *:80>
+    ServerName 127.0.0.6
+    ServerAlias www.tangwuwu.com
+    DocumentRoot "E:\xampp\htdocs\manager"
+    <Directory "E:\xampp\htdocs\manager">
+        Options FollowSymLinks IncludesNOEXEC Indexes
+        DirectoryIndex index.html
+         AllowOverride All
+        Order Deny,Allow
+        Allow from all
+    </Directory>
+</VirtualHost>
