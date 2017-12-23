@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/common.css">
     <script src="js/jquery-2.1.0.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/json.js"></script>
+    <script src="js/db.js"></script>
+    <script>
+        initDatabase();
+        selectData();
+    </script>
     <style>
         .clear{clear: both;width: 0;height: 0;}
         body{background-color: lavender;margin-top: 0;overflow: hidden;}
@@ -31,7 +35,8 @@
             outline:none;
         }
         ::-webkit-input-placeholder{color: white;}
-        .login>form>button{background-color: #50aff7;font-size:0.5rem;color: white;width: 100%;height: 1.2rem;line-height: 0.8rem;border: 0;}
+        .login>button{background-color: #50aff7;font-size:0.5rem;color: white;width: 100%;height: 1.2rem;
+            margin-bottom:0.4rem;line-height: 0.8rem;border: 0;}
         .login>a{text-decoration: none;font-size: 0.35rem;color: #50aff7; }
         .login>a.forget{float: left;}
         .login>a.register{float: right;}
@@ -46,15 +51,44 @@
             血浓于水
         </p>
         <form action="haha.html" method="get">
-            <div><input type="text" name="name" placeholder="请输入账号"></div>
-            <div><input type="password" name="password" placeholder="请输入密码"></div>
-            <button type="submit">登录</button>
+            <div><input type="text" name="name" placeholder="请输入账号" id="name"></div>
+            <div><input type="password" name="password" placeholder="请输入密码" id="password"></div>
         </form>
+        <button type="button" onclick="login()">登录</button>
         <a class="forget" href="index.html">忘记密码?</a><a class="register">新用户注册</a>
         <div class="clear"></div>
         <p class="agree-service">登录即代表阅读并同意<a>服务条款</a></p>
     </div>
 </section>
+<script>
+    function login() {
+        var name = document.getElementById('name').value;
+        var password = document.getElementById('password').value;
+        select(name,password);
+        console.log(name);
+    }
+    function select(name,password) {
+        var db = getCurrentDb();
+        //插入数据
+        db.transaction(function (trans) {
 
+            trans.executeSql("SELECT * FROM user WHERE name=?", [name], function (ts, data) {
+                if (data.rows.length>0) {
+                    if(data.rows.item(0).password==password){
+//                        alert('登录成功');
+                        window.location = 'haha.html?name='+name+'&password='+password;
+                    }else {
+                        alert('密码错误');
+                    }
+                }else {
+                    alert('账号不存在');
+                }
+            }, function (ts, message) {
+
+            });
+
+        });
+    }
+</script>
 </body>
 </html>

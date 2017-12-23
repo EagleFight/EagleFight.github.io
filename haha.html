@@ -32,10 +32,12 @@
         }
         return theRequest;
     }
-
-
+    var arr = getRequest();
+    window.onload = function () {
+        $('.user').text('下午好'+arr['name']);
+    }
     function getCurrentDb() {
-//打开数据库，或者直接连接数据库参数：数据库名称，版本，概述，大小
+    //打开数据库，或者直接连接数据库参数：数据库名称，版本，概述，大小
         var db = openDatabase("myDb", "1.0", "it's to save user data!", 1024 * 1024);
         return db;
     }
@@ -83,5 +85,6 @@
 
 
 </script>
+<h1 class="user"></h1>
 </body>
 </html>
