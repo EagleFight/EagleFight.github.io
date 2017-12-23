@@ -1,5 +1,5 @@
 *{text-size-adjust: none;  box-sizing: border-box;}
-html,body{  height: 100%;  margin: 0 auto;  padding: 0;  background-color: white;font-size: 0.4rem;}
+html,body{  height: 100%;  margin: 0 auto;  padding: 0;  background-color: white;}
 body{ position: relative;width: 10rem;}
 ul,li{list-style: none;}
 header{position:absolute;height: 100%;right: 0;z-index: 900;}
