@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mint-ui/style.css">
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/vue-2.5.13.js"></script>
+    <script src="js/mint-ui/index.js"></script>
+    <script src="js/json.js"></script>
+</head>
+<body style="width: 10rem;margin: auto;">
+
+<script>
+
+    function getRequest() {
+        var url = window.location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                //就是这句的问题
+                theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
+                //之前用了unescape()
+                //才会出现乱码
+            }
+        }
+        return theRequest;
+    }
+
+
+    function getCurrentDb() {
+//打开数据库，或者直接连接数据库参数：数据库名称，版本，概述，大小
+        var db = openDatabase("myDb", "1.0", "it's to save user data!", 1024 * 1024);
+        return db;
+    }
+
+    function initDatabase() {//初始化数据库
+        var db = getCurrentDb();
+        if (!db) {
+            alert("您的浏览器不支持HTML5");
+            return;
+        }
+        db.transaction(function (trans) {
+            trans.executeSql("CREATE TABLE IF NOT EXISTS user(name TEXT NULL,password TEXT NULL)", [], function (trans, result) {
+
+            }, function (trans, message) {
+                alert(message);
+            });
+        }, function (trans, result) {
+        }, function (trans, message) {
+        });
+    }
+
+    $(function () {
+        initDatabase();
+        var arr = getRequest();
+        var name = arr['name'];//参数名
+        var password = arr['password'];
+        alert(name);
+        if (name != null && name.toString().length > 1) {
+
+            var db = getCurrentDb();
+//插入数据
+
+            db.transaction(function (trans) {
+
+                trans.executeSql("INSERT INTO user(name,password) VALUES(?,?) ", [name, password], function (ts, data) {
+
+                }, function (ts, message) {
+                    alert(message);
+                });
+
+            });
+
+        }
+    });
+
+
+</script>
+</body>
+</html>
