@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html,body,div,p,img,ul,li,form,input,table,thead,tbody,th,tr,td,hr,label,span,dl,dt,dd,h1,h2,h3,h4,h5,h6,button{margin:0;padding:0;}
+body {
+    font-family: "微软雅黑", Helvetica, STHeiTi, sans-serif; /*使用无衬线字体*/
+}
+
+img{border:none}
+
+ul,li{list-style: none;}
+a{text-decoration: none}
+
+a, img {
+    -webkit-touch-callout: none; /*禁止长按链接与图片弹出菜单*/
+}
+
+html, body {
+    -webkit-user-select: none; /*禁止选中文本*/
+    user-select: none;
+    background-color: #F2F2F2;
+    max-width: 1080px;
+    margin: 0px auto;
+}
+
+button,input,optgroup,select,textarea {
+    -webkit-appearance:none; /*去掉webkit默认的表单样式*/
+}
+
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+}
+
+hr{border: none;border-bottom: 1px solid #EDEDED}
