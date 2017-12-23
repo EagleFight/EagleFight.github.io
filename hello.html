@@ -12,7 +12,7 @@
     <script src="js/json.js"></script>
     <style>
         .clear{clear: both;width: 0;height: 0;}
-        body{background-color: lavender;margin-top: 0;}
+        body{background-color: lavender;margin-top: 0;overflow: hidden;}
         .login{width: 9rem;margin: 0 0.5rem;margin-top: 2rem;}
         .login>form{width: 100%;margin-bottom:0.5rem;font-size: 0.4rem;}
         .login>form>div{margin:0.5rem 0;}
@@ -20,6 +20,7 @@
             border:0;
             width: 100%;
             padding:0;
+             background-color: lavender;
             border-bottom:1px solid rgb(160,160,160);
             size: 4.57rem;
             height: 1rem;
@@ -30,20 +31,23 @@
         .login>a{text-decoration: none;font-size: 0.35rem;color: #50aff7; }
         .login>a.forget{float: left;}
         .login>a.register{float: right;}
-        .login>.agree-service{text-align: center;font-size: 0.35rem;color: white;margin-top: 80%;}
+        .login>.agree-service{text-align: center;font-size: 0.35rem;color: white;margin-top: 100%;}
         .login>.agree-service>a{text-decoration: none;color: #50aff7; }
     </style>
 </head>
 <body>
-        <div class="login">
-            <form action="haha.html" method="get">
-                <div><input type="text" name="name" placeholder="请输入账号"></div>
-                <div><input type="password" name="password" placeholder="请输入密码"></div>
-                <button type="submit">登录</button>
-            </form>
-            <a class="forget">忘记密码?</a><a class="register">新用户注册</a>
-            <div class="clear"></div>
-            <p class="agree-service">登录即代表阅读并同意<a>服务条款</a></p>
-        </div>
+<section>
+    <div class="login">
+        <form action="haha.html" method="get">
+            <div><input type="text" name="name" placeholder="请输入账号"></div>
+            <div><input type="password" name="password" placeholder="请输入密码"></div>
+            <button type="submit">登录</button>
+        </form>
+        <a class="forget">忘记密码?</a><a class="register">新用户注册</a>
+        <div class="clear"></div>
+        <p class="agree-service">登录即代表阅读并同意<a>服务条款</a></p>
+    </div>
+</section>
+
 </body>
 </html>
