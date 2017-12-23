@@ -14,10 +14,11 @@
         form>div{margin:0.5rem;}
         form>div>input{
             border:0;
+            width: 100%;
+            padding:0;
             border-bottom:1px solid rgb(160,160,160);
             size: 4.57rem;
-            height: 0.5rem;
-            padding: 0;
+            height: 1rem;
             font-size: 0.4rem;
             outline:none;
         }
@@ -26,8 +27,8 @@
 </head>
 <body style="width: 10rem;margin: auto;">
         <form action="haha.html" method="get">
-            <div><label>姓名</label><input type="text" name="name"></div>
-            <div><label>密码</label><input type="password" name="password"></div>
+            <div><input type="text" name="name" placeholder="请输入账号"></div>
+            <div><input type="password" name="password" placeholder="请输入密码"></div>
             <button type="submit">登录</button>
         </form>
 </body>
