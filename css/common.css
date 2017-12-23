@@ -5,4 +5,3 @@ ul,li{list-style: none;}
 header{position:absolute;height: 100%;right: 0;z-index: 900;}
 footer{position: absolute;}
 body>section{  height: 100%;overflow: auto;width: 10rem;padding: 0;margin: auto;overflow-x: hidden;}
-header>div{float: left;}
