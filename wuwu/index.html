@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文字加密及解密</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="../js/jquery-2.1.0.js"></script>
+    <script src="js/all.js"  charset="utf-8"></script>
+</head>
+<body>
+<table border="1">
+<tbody></tbody>
+</table>
+<p><input id="text1" name="textfield" value="源码爱好者"></p>
+<input type="button" name="Button1" value="文字加密">
+<input type="button" name="Button2" value="文字解密">
+<script>
+
+//    var local = localStorage;
+////    if(local.getItem('login')=='wugege'){
+////
+////    }
+</script>
+<script language="JavaScript">
+    console.log(Encrypt('chinanursecare.com:3306'));
+    var local = localStorage;
+    if(local.getItem('login')=='wugege'){
+        for(n = 0;n<shuju.length;n++){
+            $('tbody').append('<tr><td>'+unEncrypt(shuju[n].name)+'</td>' +
+                '<td>'+unEncrypt(shuju[n].login)+'</td>' +
+                '<td>'+unEncrypt(shuju[n].psd)+'</td>' +
+                '<td><a target="_blank" href='+unEncrypt(shuju[n].a)+'>'+unEncrypt(shuju[n].a)+'</a></td></tr>');
+        }
+    }else{
+        for(n = 0;n<shu.length;n++){
+            $('tbody').append('<tr><td>'+shu[n].name+'</td>' +
+                '<td>'+shu[n].login+'</td>' +
+                '<td>'+shu[n].psd+'</td>' +
+                '<td>'+shu[n].a+'</td></tr>');
+        }
+    }
+</script>
+</body>
+</html>
