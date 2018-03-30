@@ -8,87 +8,15 @@
     <link rel="stylesheet" href="css/common.css">
     <script src="js/jquery-2.1.0.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/json.js"></script>
+    <script src="public/js/wuwu/wuwudata.js"></script>
 </head>
 <body style="width: 10rem;margin: auto;">
-<audio controls="controls" autoplay="autoplay">
-    <source src="song.ogg" type="audio/ogg" />
-    <source src="yedegangqinqu.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-</audio>
+
 <script>
-function initDatabase() {//初始化数据库
-    var db = getCurrentDb();
-    if(!db) {
-        alert("您的浏览器不支持HTML5");
-        return;
-    }
-    db.transaction(function (trans) {
-        trans.executeSql("create table if not exists user(name text null,password text null)", [], function (trans, result) {}, function (trans, message) {alert(message);});}, function (trans, result) {}, function (trans, message) {
-    });
-}
 
-$(function () {
-    initDatabase();
-    var db = getCurrentDb();
-    //插入数据
-    db.transaction(function (trans) {
-        trans.executeSql("insert into user(name,password) values('唐彦武','123'),('唐波','333') ", [], function (ts, data) {
-        }, function (ts, message) {alert(message);});
-    });
-});
-
-
-function getCurrentDb() {
-//打开数据库，或者直接连接数据库参数：数据库名称，版本，概述，大小
-var db = openDatabase("myDb", "1.0", "it's to save user data!", 1024 * 1024); ;
-return db;
-}
-
-function showAllTheData() {
-$("#tblData").empty();
-var db = getCurrentDb();
-
-db.transaction(function (trans) {
-trans.executeSql("select * from Demo1 ", [], function (ts, data) {
-    if (data) {}
-}, function (ts, message) {
-alert(message);
-var tst = message;
-});
-
-});
-}
-function login() {
-    var name = $("#txtName").val();
-    var password = $("#txtTitle").val();
-    var db = getCurrentDb();
-    db.transaction(function (trans) {
-        trans.executeSql("select * from user where name=?", ['唐'], function (ts, data) {
-            if (data.rows.item(0)) {alert(data.rows.item(0));window.location='index.html';}
-        }, function (ts, message) {
-            alert(message);
-            var tst = message;
-        });
-
-    });
-}
+var wuwu = new wuwu('wuwu');
+wuwu.say();
 </script>
-
-
-
-用户名：
-<input type="text" name="name" id="txtName" required/>
-
-
-密码
-<input type="text" name="password" id="txtTitle" required/>
-
-
-
-        <input type="button" value="登录" id="btnSave" onclick="login()"/>
-
-
 
 
 </body>
