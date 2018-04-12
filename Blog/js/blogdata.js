@@ -30,7 +30,7 @@
     function technogloy(){}
     technogloy.prototype = new blog();
     technogloy.prototype.article = [
-        {'title':'今日的付出', "name":"菜鸟教程" , "url":"www.runoob.com" },
+        {'title':'今日的付出','digest':'今天很开心','content':'大唐国际如果热和个人股和认识到大润发的若干','post_time':'2018-04-12','author':'唐彦武','type':'技术文章'},
         { "name":"google" , "url":"www.google.com" },
         { "name":"微博" , "url":"www.weibo.com" }
         ];
