@@ -29,21 +29,21 @@
 (function(){
     function technogloy(){}
     technogloy.prototype = new blog();
-    technogloy.prototype.content =
-       [
-            { "name":"菜鸟教程" , "url":"www.runoob.com" },
-            { "name":"google" , "url":"www.google.com" },
-            { "name":"微博" , "url":"www.weibo.com" }
+    technogloy.prototype.article = [
+        {'title':'今日的付出', "name":"菜鸟教程" , "url":"www.runoob.com" },
+        { "name":"google" , "url":"www.google.com" },
+        { "name":"微博" , "url":"www.weibo.com" }
         ];
-
     window.technogloy = technogloy;
 }());
+(function(){
+    function life(){}
+    life.prototype = new blog();
+    life.prototype.article = [
+        {'title':'明日的付出', "name":"菜鸟教程" , "url":"www.runoob.com" },
+        { "name":"google" , "url":"www.google.com" },
+        { "name":"微博" , "url":"www.weibo.com" }
+    ];
 
-// (function(){
-//     function student(){}
-//     student.prototype = new technogloy();
-//     student.prototype.haha = function(){
-//         alert('我们都是好孩子');
-//     }
-//     window.student = student;
-// }());
+    window.life = life;
+}());
