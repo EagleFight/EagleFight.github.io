@@ -14,12 +14,20 @@
   <script src="js/blogdata.js"></script>
   <script src="js/allblog.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
+    <style>
+        audio {display: none !important;}
+    </style>
 </head>
 <body>
 <div id="wrapper">
   <header>
     <div class="headtop"></div>
     <div class="contenttop">
+        <audio controls="controls" autoplay="autoplay" loop="loop">
+            <source src="song.ogg" type="audio/ogg"/>
+            <source src="https://eaglefight.github.io/yedegangqinqu.mp3" type="audio/mpeg"/>
+            Your browser does not support the audio element.
+        </audio>
       <div class="logo f_l">唐彦武个人博客――江南墨卷</div>
       <div class="search f_r">
         <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
@@ -193,13 +201,13 @@
   var article = blog.article;
   var list = '';
   for(var i = 0;i<blog.article.length;i++){
-     list+= '      <h3><a href="techDetail.html?id='+article[article.length-1-i].tech_id+'">【心路历程】'+article[article.length-1-i].title+'</a></h3>\n' +
+     list+= '      <h3><a href="techDetail.html?id='+article[article.length-1-i].tech_id+'">'+article[article.length-1-i].title+'</a></h3>\n' +
           '      <figure><img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦"></figure>\n' +
           '      <ul>\n' +
           '        <p> '+article[i].digest+'</p>\n' +
           '        <a title="【心路历程】请不要在设计这条路上徘徊啦" href="/jstt/bj/2017-07-13/784.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>\n' +
           '      </ul>\n' +
-          '      <p class="dateview"><span>'+article[i].post_time+'</span><span>作者：'+article[i].author+'</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>';
+          '      <p class="dateview"><span>'+article[i].post_time+'</span><span>作者：'+article[i].author+'</span><span>博客类型：[<a href="/jstt/bj/">'+article[article.length-1-i].type+'</a>]</span></p>';
   }
   $('.bloglist').html(list);
 </script>

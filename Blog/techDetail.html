@@ -7,13 +7,47 @@
 <meta name="description" content="个人博客 ――江南墨卷" />
 <link href="css/base.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
+<link href="css/styles/androidstudio.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="js/modernizr.js"></script>
 
 <![endif]-->
   <script src="js/blogdata.js"></script>
   <script src="js/allblog.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+  <script>
+      hljs.initHighlightingOnLoad();
+  </script>
+  <style>
+    pre code{font-size: 16px !important;}
+    /*pre {*/
+      /*position: relative;*/
+      /*margin-bottom: 24px;*/
+      /*border-radius: 3px;*/
+      /*border: 1px solid #C3CCD0;*/
+      /*background: #FFF;*/
+      /*overflow: hidden;*/
+    /*}*/
+
+    /*code {*/
+      /*display: block;*/
+      /*padding: 12px 24px;*/
+      /*overflow-y: auto;*/
+      /*font-weight: 300;*/
+      /*font-family: Menlo, monospace;*/
+      /*font-size: 0.8em;*/
+    /*}*/
+    /*.hljs ol li{*/
+      /*margin-left: 30px;*/
+      /*list-style-type: decimal-leading-zero;*/
+    /*}*/
+    .bloglist>h2{font-size: 24px;margin: 20px auto ;text-align: center;}
+    .bloglist .article-content section{margin:0 !important;
+      background-color: rgba(255,255,255,0) !important;box-shadow: none !important;padding: 0 !important;}
+    .bloglist .article-content>section img{display: none;}
+    .bloglist>p{font-size: 16px;color:#333333;text-indent: 2em;line-height: 24px;margin: 5px 0;}
+  </style>
 </head>
 <body>
 <div id="wrapper">
@@ -75,7 +109,8 @@
   <div class="jztop"></div>
   <div class="container">
     <div class="bloglist f_l">
-      <h2>今天很开心啊</h2>
+      <h2 class="title">今天很开心啊</h2>
+      <p class="digest"></p>
       <div class="article-content">
 
       </div>
@@ -153,10 +188,27 @@
 <script>
 
     var blog = new technogloy();
-  var article = blog.article;
-  var list = article[0].content;
+  var article = blog.article[0];
+  var list = article.content;
 
   $('.bloglist>.article-content').html(list);
+  $('.bloglist>h2').html(article.title);
+  $('.bloglist>p.digest').html(article.digest);
+//  $('.bloglist>.article-content section').css('background-color','rgba(255,255,255,0) !import');
+
+//    $(function(){
+//        $('pre code').each(function(){
+//            texts = $(this).text().replace(/&(?!#?[a-zA-Z0-9]+;)/g, '&amp;')
+//                .replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&#39;').replace(/"/g, '&quot;')
+//            var codetext = texts.split('\n');
+//            var code = '';
+//            $(codetext).each(function(v){
+//                code += '<li>'+codetext[v]+'</li>';
+//            })
+//            code = '<ol>'+code+'</ol>';
+//            $(this).html(code);
+//        });
+//    });
 </script>
 </body>
 </html>
