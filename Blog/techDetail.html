@@ -46,7 +46,7 @@
     .bloglist .article-content section{margin:0 !important;
       background-color: rgba(255,255,255,0) !important;box-shadow: none !important;padding: 0 !important;}
     .bloglist .article-content>section img{display: none;}
-    .bloglist>p{font-size: 16px;color:#333333;text-indent: 2em;line-height: 24px;margin: 5px 0;}
+    .bloglist>p,  p.word{font-size: 16px;color:#333333;text-indent: 2em;line-height: 24px;margin: 5px 0;}
   </style>
 </head>
 <body>
@@ -109,7 +109,7 @@
   <div class="jztop"></div>
   <div class="container">
     <div class="bloglist f_l">
-      <h2 class="title">今天很开心啊</h2>
+      <h2 class="title"></h2>
       <p class="digest"></p>
       <div class="article-content">
 
@@ -186,29 +186,12 @@
   </footer>
 </div>
 <script>
-
     var blog = new technogloy();
-  var article = blog.article[0];
-  var list = article.content;
-
-  $('.bloglist>.article-content').html(list);
-  $('.bloglist>h2').html(article.title);
-  $('.bloglist>p.digest').html(article.digest);
-//  $('.bloglist>.article-content section').css('background-color','rgba(255,255,255,0) !import');
-
-//    $(function(){
-//        $('pre code').each(function(){
-//            texts = $(this).text().replace(/&(?!#?[a-zA-Z0-9]+;)/g, '&amp;')
-//                .replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&#39;').replace(/"/g, '&quot;')
-//            var codetext = texts.split('\n');
-//            var code = '';
-//            $(codetext).each(function(v){
-//                code += '<li>'+codetext[v]+'</li>';
-//            })
-//            code = '<ol>'+code+'</ol>';
-//            $(this).html(code);
-//        });
-//    });
+    var article = blog.article[0];
+    var list = article.content;
+    $('.bloglist>.article-content').html(list);
+    $('.bloglist>h2').html(article.title);
+    $('.bloglist>p.digest').html(article.digest);
 </script>
 </body>
 </html>

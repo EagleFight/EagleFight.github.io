@@ -16,6 +16,7 @@
 <script type="text/javascript" src="js/jquery.js"></script>
     <style>
         audio {display: none !important;}
+        .article-content>p{margin: 10px 0;}
     </style>
 </head>
 <body>
@@ -45,9 +46,9 @@
             <li><a href="index.html">博客首页</a></li>
               <li><a href="#">博客汇总</a>
                   <ul>
-                      <li><a href="newslistpic.html">前端技术</a></li>
-                      <li><a href="newslistpic.html">php开发</a></li>
-                      <li><a href="newslistpic.html">散文随笔</a></li>
+                      <li><a href="newslistpic.html">技术文章</a></li>
+                      <li><a href="newslistpic.html">散文杂记</a></li>
+                      <li><a href="newslistpic.html">诗歌随笔</a></li>
                   </ul>
               </li>
             <li><a href="#">关于我</a>
@@ -201,7 +202,7 @@
   var article = blog.article;
   var list = '';
   for(var i = 0;i<blog.article.length;i++){
-     list+= '      <h3><a href="techDetail.html?id='+article[article.length-1-i].tech_id+'">'+article[article.length-1-i].title+'</a></h3>\n' +
+     list+= '      <h3><a href="techDetail.html?id='+article[article.length-1-i].tech_id+'">'+article[article.length-1-i].tip+article[article.length-1-i].title+'</a></h3>\n' +
           '      <figure><img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦"></figure>\n' +
           '      <ul>\n' +
           '        <p> '+article[i].digest+'</p>\n' +
