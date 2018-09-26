@@ -20,7 +20,6 @@
                 <th>Vehicle</th>
                 <th>Date</th>
                 <th>Location</th>
-                <th>Speed</th>
             </tr>
         </thead>
         <tbody>
@@ -32,8 +31,10 @@ $.get('test.csv', function(data) {
     var lines = data.split('\n');
 
     // 遍历每一行
+	var tr="";
     $.each(lines, function(lineNo, line) {
         var items = line.split(',');
+		tr = "<tr>";
 
 //        // 处理第一行，即分类
 //        if (lineNo == 0) {
@@ -52,13 +53,16 @@ $.get('test.csv', function(data) {
             $.each(items, function(itemNo, item) {
              
                     series.data.push(parseFloat(item)); // 数据，记得转换
+					tr+="<td>"+item+"</td>";
             });
             // 最后将数据 push 到数据列配置里
          
 //        }
-
+			
+tr+="</tr>";
     });
-	console.log(lines);
+//	console.log(lines);
+
 	});
 	
 
