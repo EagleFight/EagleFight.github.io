@@ -35,7 +35,7 @@ $.get('test.csv', function(data) {
 	
     $.each(lines, function(lineNo, line) {
         var items = line.split('，');
-		tr = "<tr>";
+		tr += "<tr>";
 		console.log(line);
 
 //        // 处理第一行，即分类
