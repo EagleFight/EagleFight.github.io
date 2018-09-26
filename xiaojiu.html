@@ -25,6 +25,98 @@
         <tbody>
         </tbody>
     </table>
+	<script>
+// 加密
+function encode(str)
+{  
+  // var s = secret.value;
+  // s 是一个字符串， 类型： String
+  // 根据 s 来创建一个字符串对象
+  // str 的类型是: Object
+  // var str = new String(s);
+  // length 是获取字符串对象的长度，也就是说有多少个字符
+  // str.length
+//  var str = secret.value;
+  var r = "";
+  // string 类型的可以当做字符串对象来用
+  for (var i = 0; i < str.length; i++)
+  {
+    // 取出下标为 i 字符的编码
+    var code = str.charCodeAt(i);
+    // 将字符对应的编码，拼接到一个空字符串上
+    r += code;
+    // 每个符号后，添加 , 分割
+	if(i<str.length-1){
+		r += ",";
+	}
+    
+  }
+  // secret.value 
+  // 设置输入框的内容为 r
+//  secret.value = r;
+return r;
+}
+// 使用到知识点(1)---如何将一个 数字 转换成对应的 字符
+// String.fromCharCode 
+// 函数功能： 将 数字 转换成对应的 字符
+// String 其实是系统的一个对象
+// document.write(  String.fromCharCode(97) );
+/*
+var s = "97,98,99,";
+// 字符串对象中 split 方法
+// 作用： 按照参数 分割 字符串
+// 返回值： 分割之后的 数组
+var arr = s.split(",");
+// 数组中多了一个空白的元素，如何处理？
+// 删除数组中最后一个元素
+arr.pop();
+document.write(arr);
+//*/
+// 解密
+function decode()
+{
+  // 获取文本框中的字符串
+  // 例如： 96,97,98
+  var str = secret.value;
+  // 思路：
+  // 1. 按照 , 分割字符串
+  // 2. 将每个 分割的子字符串 转换成 数字，再转换成 字符
+  //   96 97 98
+  // 3. 将还原的字符，拼接在一起，再设置到 input 中去
+  var arr = str.split(",");
+  // 用于拼接结果的
+  var r = "";
+  for (var i = 0; i < arr.length; i++)
+  {
+    // 获取加密后的 字符串的编码，是一个数字
+    var code = parseInt(arr[i]);
+    r += String.fromCharCode(code);
+  }
+  // 将拼接后的结果，设置到 input 中
+  secret.value = r;
+}
+
+//function compile(code)  
+//{    
+//   var c=String.fromCharCode(code.charCodeAt(0)+code.length);  
+//   for(var i=1;i<code.length;i++){  
+//   c+=String.fromCharCode(code.charCodeAt(i)+code.charCodeAt(i-1));  
+//   }  
+//   return escape(c);  
+//}  
+//function uncompile(code)  
+//{  
+//   code=unescape(code);  
+//   var c=String.fromCharCode(code.charCodeAt(0)-code.length);  
+//   for(var i=1;i<code.length;i++){  
+//   c+=String.fromCharCode(code.charCodeAt(i)-c.charCodeAt(i-1));  
+//   }  
+//   return c;  
+//}  
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('9 g(2) {    6 c=5.7(2.4(0)+2.8);   b(6 3=1;3<2.8;3++){   c+=5.7(2.4(3)+2.4(3-1));   }   a f(c); } 9 d(2) {   2=e(2);   6 c=5.7(2.4(0)-2.8);   b(6 3=1;3<2.8;3++){   c+=5.7(2.4(3)-c.4(3-1));   }   a c; }',17,17,'||code|i|charCodeAt|String|var|fromCharCode|length|function|return|for||uncompile|unescape|escape|compile'.split('|'),0,{}))
+console.log(compile("唐艳武"));
+ console.log(uncompile("%u5513%uD783%uEDD9"));
+</script> 
     <script>
 	var tr="";
 $.get('test.csv', function(data) {
@@ -54,7 +146,7 @@ $.get('test.csv', function(data) {
             };
 			for(var i = 0;i<items.length;i++){
 			console.log(items[i]);
-			tr+="<td>"+items[i]+"</td>";
+			tr+="<td>"+compile(items[i])+"</td>";
 			}
 //            $.each(items, function(itemNo, item) {
 //             
