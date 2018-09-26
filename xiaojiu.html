@@ -51,12 +51,16 @@ $.get('test.csv', function(data) {
             var series = {
                 data: []
             };
-            $.each(items, function(itemNo, item) {
-             
-                    series.data.push(parseFloat(item)); // 数据，记得转换
-					tr+="<td>"+item+"</td>";
-					console.log(item);
-            });
+			for(var i = 0;i<items.length;i++){
+			console.log(item[i]);
+			tr+="<td>"+item[i]+"</td>";
+			}
+//            $.each(items, function(itemNo, item) {
+//             
+//                    series.data.push(parseFloat(item)); // 数据，记得转换
+//					
+//					console.log(item);
+//            });
             // 最后将数据 push 到数据列配置里
          
 //        }
