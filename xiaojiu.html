@@ -26,12 +26,13 @@
         </tbody>
     </table>
     <script>
+	var tr="";
 $.get('test.csv', function(data) {
     // 分隔每一行
     var lines = data.split('\n');
 
     // 遍历每一行
-	var tr="";
+	
     $.each(lines, function(lineNo, line) {
         var items = line.split(',');
 		tr = "<tr>";
@@ -54,6 +55,7 @@ $.get('test.csv', function(data) {
              
                     series.data.push(parseFloat(item)); // 数据，记得转换
 					tr+="<td>"+item+"</td>";
+					console.log(item);
             });
             // 最后将数据 push 到数据列配置里
          
