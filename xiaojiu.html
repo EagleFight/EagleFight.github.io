@@ -50,11 +50,8 @@ $.get('test.csv', function(data) {
                 data: []
             };
             $.each(items, function(itemNo, item) {
-                if (itemNo == 0) {
-                    series.name = item;   // 数据列的名字
-                } else {
-                    series.data.push(parseFloat(item)); // 数据，记得转换成数值类型
-                }
+             
+                    series.data.push(parseFloat(item)); // 数据，记得转换
             });
             // 最后将数据 push 到数据列配置里
          
