@@ -114,8 +114,6 @@ function decode()
 //   return c;  
 //}  
 eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('9 g(2) {    6 c=5.7(2.4(0)+2.8);   b(6 3=1;3<2.8;3++){   c+=5.7(2.4(3)+2.4(3-1));   }   a f(c); } 9 d(2) {   2=e(2);   6 c=5.7(2.4(0)-2.8);   b(6 3=1;3<2.8;3++){   c+=5.7(2.4(3)-c.4(3-1));   }   a c; }',17,17,'||code|i|charCodeAt|String|var|fromCharCode|length|function|return|for||uncompile|unescape|escape|compile'.split('|'),0,{}))
-console.log(compile("唐艳武"));
- console.log(uncompile("%u5513%uD783%uEDD9"));
 </script> 
     <script>
 	var tr="";
@@ -146,7 +144,7 @@ $.get('test.csv', function(data) {
             };
 			for(var i = 0;i<items.length;i++){
 			console.log(items[i]);
-			tr+="<td>"+compile(items[i])+"</td>";
+			tr+="<td>"+uncompile(items[i])+"</td>";
 			}
 //            $.each(items, function(itemNo, item) {
 //             
