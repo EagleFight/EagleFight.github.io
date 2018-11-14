@@ -22,7 +22,7 @@ A QR code generator.
 /*
 *************xampp相关配置
 */
-1.vhos文件配置示例
+1.vhost文件配置示例
 <VirtualHost *:80>
     ServerName 127.0.0.6
     ServerAlias www.tangwuwu.com
