@@ -1,21 +1,28 @@
-﻿<h1 id="1a">哈哈1</h1>
-<h1 id="1a">哈哈1</h1>
-<h1 id="1a">哈哈1</h1>
-<h1 id="1a">哈哈1</h1>
-<h1 id="1a">哈哈1</h1>
-<h1 id="1a">哈哈1</h1>
-<h1 id="1a">哈哈1</h1>
-<p id="2a">哈哈2<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
-<p id="1a">哈哈1<p>
+﻿/*
+*************谷歌浏览器6款好用插件
+*/
+1.Code Cola 3.5.0
+Code Cola是一个可视化编辑在线页面css样式的chrome插件。
+
+2.crxMouse Chrome™ Gestures 3.1.0
+原名:Gestures for Chrome(TM)汉化版.方便,快捷,充分发掘鼠标的所有操作.功能包括:鼠标手势,超级拖曳,滚轮手势,摇杆手势,平滑滚动,标签页列表等.
+
+3.JSON-handle 0.5.6
+It's a browser and editor for JSON document.You can get a beautiful view
+
+4.Page Ruler 2.0.9
+Draw a ruler to get pixel dimensions and positioning, and measure elements on any web page.
+
+5.QR code go 0.1.0.2
+A QR code generator.
+
+6.网页截图:注释&录屏 3.9.35
+录屏，捕获整个页面或任何部分，矩形，圆形，箭头，线条和文字，模糊敏感信息，一键上传分享注释。支持PNG和链接
+
+/*
+*************xampp相关配置
+*/
+1.vhos文件配置示例
 <VirtualHost *:80>
     ServerName 127.0.0.6
     ServerAlias www.tangwuwu.com
