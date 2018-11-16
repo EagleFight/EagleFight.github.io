@@ -70,3 +70,5 @@ Your requirements could not be resolved to an installable set of packages.
 　　需要安装一个插件（plug），运行命令安装即可：
 
 composer global require "fxp/composer-asset-plugin:^1.4.1"
+
+更新  composer selfupdate
