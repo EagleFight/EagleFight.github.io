@@ -60,3 +60,13 @@ A QR code generator.
       如果你很熟悉此进程,并确定可以终止,那么就直接使用上面的命令把PID为1688的进程终止.(这一步同样可以在任务管理器中执行,inetinfo.exe就是任务管理器中的映像名称,选中它,点击"结束进程"即可)
        >tasklist | findstr "1688"
       再次确认是否成功终止,如果成功终止此次执行命令后应返回空.
+
+2.问题零：Your requirements could not be resolved to an installable set of packages.
+　　如果出现下面这种情况：
+
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Your requirements could not be resolved to an installable set of packages.
+　　需要安装一个插件（plug），运行命令安装即可：
+
+composer global require "fxp/composer-asset-plugin:^1.4.1"
