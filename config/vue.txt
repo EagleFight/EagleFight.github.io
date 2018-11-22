@@ -3,3 +3,11 @@ https://github.com/EagleFight/FutureWeb.git/trunk
 2.1.FutureData svn检出地址：
 
 3.node本地安装资源：
+npm i vue -g
+npm i webpack -g
+npm i vue-cli -g 
+
+4.vue脚手架搭建项目
+vue init webpack            //最后边三个选择n（从Use ESLint to lint your code? 开始），其余选择y
+npm i                      //注意去掉package.json文件中的"webpack": "^3.6.0",安装会更快
+npm start                  //启动服务器
