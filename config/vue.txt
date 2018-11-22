@@ -1,0 +1,5 @@
+1.FutureWeb svn检出地址：
+https://github.com/EagleFight/FutureWeb.git/trunk
+2.1.FutureData svn检出地址：
+
+3.node本地安装资源：
