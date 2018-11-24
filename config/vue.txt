@@ -1,13 +1,17 @@
-1.FutureWeb svn检出地址：
-https://github.com/EagleFight/FutureWeb.git/trunk
-2.1.FutureData svn检出地址：
+1.淘宝镜像：
+npm config set registry http://registry.npm.taobao.org
 
-3.node本地安装资源：
+2.FutureWeb svn检出地址：
+https://github.com/EagleFight/FutureWeb.git/trunk
+
+3.FutureData svn检出地址：
+
+4.node本地安装资源：
 npm i vue -g
 npm i webpack -g
 npm i vue-cli -g 
 
-4.vue脚手架搭建项目
+5.vue脚手架搭建项目
 vue init webpack            //最后边三个选择n（从Use ESLint to lint your code? 开始），其余选择y
 npm i                      //注意去掉package.json文件中的"webpack": "^3.6.0",安装会更快
 npm start                  //启动服务器
