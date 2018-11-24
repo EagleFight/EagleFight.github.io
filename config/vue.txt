@@ -7,6 +7,8 @@ https://github.com/EagleFight/FutureWeb.git/trunk
 3.FutureData svn检出地址：
 
 4.node本地安装资源：
+npm i supervisor -g
+
 npm i vue -g
 npm i webpack -g
 npm i vue-cli -g 
