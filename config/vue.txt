@@ -1,19 +1,19 @@
-1.ÌÔ±¦¾µÏñ£º
+ï»¿1.æ·˜å®é•œåƒï¼š
 npm config set registry http://registry.npm.taobao.org
 
-2.FutureWeb svn¼ì³öµØÖ·£º
+2.FutureWeb svnæ£€å‡ºåœ°å€ï¼š
 https://github.com/EagleFight/FutureWeb.git/trunk
 
-3.FutureData svn¼ì³öµØÖ·£º
+3.FutureData svnæ£€å‡ºåœ°å€ï¼š
 
-4.node±¾µØ°²×°×ÊÔ´£º
+4.nodeæœ¬åœ°å®‰è£…èµ„æºï¼š
 npm i supervisor -g
 
 npm i vue -g
 npm i webpack -g
 npm i vue-cli -g 
 
-5.vue½ÅÊÖ¼Ü´î½¨ÏîÄ¿
-vue init webpack            //×îºó±ßÈı¸öÑ¡Ôñn£¨´ÓUse ESLint to lint your code? ¿ªÊ¼£©£¬ÆäÓàÑ¡Ôñy
-npm i                      //×¢ÒâÈ¥µôpackage.jsonÎÄ¼şÖĞµÄ"webpack": "^3.6.0",°²×°»á¸ü¿ì
-npm start                  //Æô¶¯·şÎñÆ÷
+5.vueè„šæ‰‹æ¶æ­å»ºé¡¹ç›®
+vue init webpack            //æœ€åè¾¹ä¸‰ä¸ªé€‰æ‹©nï¼ˆä»Use ESLint to lint your code? å¼€å§‹ï¼‰ï¼Œå…¶ä½™é€‰æ‹©y
+npm i                      //æ³¨æ„å»æ‰package.jsonæ–‡ä»¶ä¸­çš„"webpack": "^3.6.0",å®‰è£…ä¼šæ›´å¿«
+npm start                  //å¯åŠ¨æœåŠ¡å™¨
