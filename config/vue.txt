@@ -21,4 +21,4 @@ npm start                  //启动服务器
 6.FutureHome_Web所用到资源
 npm i less less-loader -D     //安装Css预处理器
 npm i vue-resource animate.css iview -S
-npm install vue-ueditor -S
+npm i vue-ueditor-wrap -S     
