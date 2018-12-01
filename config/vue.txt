@@ -7,7 +7,7 @@ https://github.com/EagleFight/FutureWeb.git/trunk
 3.FutureData svn检出地址：
 
 4.node本地安装资源：
-npm i supervisor -g
+npm i supervisor -g       //不用重启服务器
 
 npm i vue -g
 npm i webpack -g
@@ -22,3 +22,17 @@ npm start                  //启动服务器
 npm i less less-loader -D     //安装Css预处理器
 npm i vue-resource animate.css iview -S
 npm i vue-ueditor-wrap -S     
+npm i echarts -S
+
+7.express操作顺序以及所用资源所用资源
+顺序：
+npm i express -S
+npm iexpress-generator -g   //express生成器
+express -e
+npm i
+资源：
+npm i cookie-session -S     //安装session
+npm i express-validator -S  //表单验证
+npm i mysql -S                //mysql中间件
+npm i body-parser -S       //post获取值
+npm i async -S
