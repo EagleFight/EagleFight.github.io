@@ -23,6 +23,7 @@ npm i less less-loader -D     //安装Css预处理器
 npm i vue-resource animate.css iview -S
 npm i vue-ueditor-wrap -S     
 npm i echarts -S
+npm i vue-async-data-2 -S
 
 7.express操作顺序以及所用资源所用资源
 顺序：
