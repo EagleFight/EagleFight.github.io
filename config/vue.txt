@@ -37,3 +37,8 @@ npm i express-validator -S  //表单验证
 npm i mysql -S                //mysql中间件
 npm i body-parser -S       //post获取值
 npm i async -S
+
+8.用到的博客链接
+https://blog.csdn.net/huwei2003/article/details/77646054    Nodejs ORM框架Sequelize快速入门
+https://itbilu.com/nodejs/npm/VkYIaRPz-.html#induction-install    Sequelize 中文API文档－1. 快速入门、Sequelize类
+
