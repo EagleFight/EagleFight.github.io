@@ -38,6 +38,8 @@ npm i mysql -S                //mysql中间件
 npm i body-parser -S       //post获取值
 npm i async -S
 npm i sequelize -S       //数据库操作框架
+npm install mysql2 -S    //sequelize需要单独安装mysql依赖
+
 
 
 8.用到的博客链接
