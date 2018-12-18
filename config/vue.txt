@@ -46,4 +46,5 @@ npm install mysql2 -S    //sequelize需要单独安装mysql依赖
 https://blog.csdn.net/huwei2003/article/details/77646054    Nodejs ORM框架Sequelize快速入门
 https://itbilu.com/nodejs/npm/VkYIaRPz-.html#induction-install    Sequelize 中文API文档－1. 快速入门、Sequelize类
 https://blog.csdn.net/suyimin2010/article/details/80552345    使用Sequelize
+https://www.jb51.net/article/106782.htm          关于Sequelize连接查询时inlude中model和association的区别详解
 
