@@ -53,3 +53,8 @@ https://www.jb51.net/article/106782.htm          关于Sequelize连接查询时i
 https://blog.csdn.net/TQFtqf136/article/details/73498733     node.js项目中基于mysql利用sequelize-auto对照数据库自动生成相应的models
 https://blog.csdn.net/my_roads/article/details/78302155?utm_source=blogxgwz5   node.js如何封装一个接口
 
+http://www.it165.net/pro/html/201508/50341.html   sequelize中的association使用讲解 nodejs
+https://www.jb51.net/article/106782.htm      关于Sequelize连接查询时inlude中model和association的区别详解
+https://blog.csdn.net/sleepwalker_1992/article/details/82974703    Vue项目中实现用户登录及token验证
+
+
