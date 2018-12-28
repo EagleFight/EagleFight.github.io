@@ -24,6 +24,8 @@ npm i vue-resource animate.css iview -S
 npm i vue-ueditor-wrap -S     
 npm i echarts -S
 npm i vue-async-data-2 -S
+npm i html2canvas -S  将页面html转换成图片
+npm i jspdf@1.3.5 -S    将图片生成pdf
 
 7.express操作顺序以及所用资源所用资源
 顺序：
