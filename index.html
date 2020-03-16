@@ -8,7 +8,9 @@
 <script>
 $(document).ready(function(){
 	$("button").click(function(){
-		$("#div1").load("test.csv");
+		$("#div1").load("test.csv",'',function(data){
+		console.log(data);
+		});
 	});
 });
 </script>
