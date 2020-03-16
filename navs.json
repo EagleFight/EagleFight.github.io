@@ -1,0 +1,352 @@
+{
+	"contentManagement": [
+		{
+			"title": "物业管理",
+			"icon": "&#xe634;",
+			"href": "/future/property/image.html",
+			"spread": false,
+			"children": [
+				{
+					"title": "用户列表",
+					"icon": "&#xe61c;",
+					"href": "/future/property/user",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "业委管理",
+			"icon": "&#xe634;",
+			"href": "/future/property/images.html",
+			"spread": false,
+			"children": [
+				{
+					"title": "账号列表",
+					"icon": "&#xe61c;",
+					"href": "/future/owner/user",
+					"spread": false
+				},
+				{
+					"title": "已通过用户",
+					"icon": "&#xe61c;",
+					"href": "/future/owner/setedUser",
+					"spread": false
+				},
+				{
+					"title": "待审核用户",
+					"icon": "&#xe61c;",
+					"href": "/future/owner/completeUser",
+					"spread": false
+				},
+				{
+					"title": "未通过用户",
+					"icon": "&#xe61c;",
+					"href": "/future/owner/auditUser",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "社群服务",
+			"icon": "&#xe634;",
+			"href": "/future/property/image.html",
+			"spread": false
+		},
+		{
+			"title": "生鲜商城",
+			"icon": "&#xe634;",
+			"href": "/future/property/image.html",
+			"spread": false
+		},
+		{
+			"title": "理财资讯",
+			"icon": "&#xe634;",
+			"href": "/property/index/index",
+			"spread": false,
+			"target": "_blank"
+		},
+		{
+			"title": "健康服务",
+			"icon": "&#xe634;",
+			"href": "/property/index/index",
+			"spread": false,
+			"target": "_blank"
+		},
+		{
+			"title": "客服服务",
+			"icon": "&#xe634;",
+			"href": "/future/property/image.html",
+			"spread": false,
+			"children": [
+				{
+					"title": "客服首页",
+					"icon": "&#xe61c;",
+					"href": "/future/user/userList.html",
+					"spread": false
+				},
+				{
+					"title": "分组列表",
+					"icon": "&#xe61c;",
+					"href": "/future/service/groupList.html",
+					"spread": false
+				},
+				{
+					"title": "客服列表",
+					"icon": "&#xe61c;",
+					"href": "/future/service/userList",
+					"spread": false
+				},
+				{
+					"title": "客服设置",
+					"icon": "&#xe609;",
+					"href": "/future/login/login.html",
+					"spread": false,
+					"target": "_blank"
+				}
+			]
+		},
+		{
+			"title": "用户管理",
+			"icon": "&#xe630;",
+			"href": "",
+			"spread": false,
+			"children": [
+				{
+					"title": "用户列表",
+					"icon": "&#xe61c;",
+					"href": "/future/user/userList.html",
+					"spread": false
+				},
+				{
+					"title": "角色列表",
+					"icon": "&#xe61c;",
+					"href": "page/404.html",
+					"spread": false
+				},
+				{
+					"title": "登录",
+					"icon": "&#xe609;",
+					"href": "/future/login/login.html",
+					"spread": false,
+					"target": "_blank"
+				}
+			]
+		},
+		{
+			"title": "系统设置",
+			"icon": "&#xe634;",
+			"href": "/future/property/image.html",
+			"spread": false,
+			"children": [
+				{
+					"title": "菜单管理",
+					"icon": "&#xe61c;",
+					"href": "page/404.html",
+					"spread": false
+				}
+			]
+		}
+	],
+	"advertManagement": [
+		{
+			"title": "家园广告",
+			"icon": "&#xe630;",
+			"href": "/future/advent/futureBanner",
+			"spread": false,
+			"children": [
+				{
+					"title": "广告列表",
+					"icon": "&#xe61c;",
+					"href": "/future/advent/futureBanner",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "物业广告",
+			"icon": "&#xe630;",
+			"href": "/future/advent/propertyBanner",
+			"spread": false,
+			"children": [
+				{
+					"title": "用户列表",
+					"icon": "&#xe61c;",
+					"href": "/future/advent/propertyBanner",
+					"spread": false
+				}
+			]
+		},
+		{
+			"title": "业委广告",
+			"icon": "&#xe630;",
+			"href": "/future/advent/ownerBanner",
+			"spread": false,
+			"children": [
+				{
+					"title": "用户列表",
+					"icon": "&#xe609;",
+					"href": "/future/advent/ownerBanner",
+					"spread": false,
+					"target": false
+				}
+			]
+		},
+		{
+			"title": "健康广告",
+			"icon": "&#xe630;",
+			"href": "/future/advent/healthBanner",
+			"spread": false,
+			"children": [
+				{
+					"title": "广告列表",
+					"icon": "&#xe609;",
+					"href": "/future/advent/healthBanner",
+					"spread": false,
+					"target": false
+				}
+			]
+		},
+		{
+			"title": "理财广告",
+			"icon": "&#xe630;",
+			"href": "",
+			"spread": false,
+			"children": [
+				{
+					"title": "广告列表",
+					"icon": "&#xe609;",
+					"href": "/future/advent/conductBanner",
+					"spread": false,
+					"target": false
+				}
+			]
+		},
+		{
+			"title": "客服广告",
+			"icon": "&#xe630;",
+			"href": "",
+			"spread": false,
+			"children": [
+				{
+					"title": "广告列表",
+					"icon": "&#xe609;",
+					"href": "/future/advent/customerBanner",
+					"spread": false,
+					"target": false
+				}
+			]
+		}
+	],
+	"propertyManagement": [
+		{
+			"title": "用户列表",
+			"icon": "&#xe612;",
+			"href": "page/user/userList.html",
+			"spread": false
+		}
+	],
+	"ownerManagement": [
+		{
+			"title": "账号列表",
+			"icon": "&#xe634;",
+			"href": "/future/owner/user",
+			"spread": false
+		},
+		{
+			"title": "已通过用户",
+			"icon": "&#xe634;",
+			"href": "/future/owner/setedUser",
+			"spread": false
+		},
+		{
+			"title": "待审核用户",
+			"icon": "&#xe634;",
+			"href": "/future/owner/completeUser",
+			"spread": false
+		},
+		{
+			"title": "未通过用户",
+			"icon": "&#xe634;",
+			"href": "/future/owner/auditUser",
+			"spread": false
+		}
+	],
+	"wealthManagement": [
+		{
+			"title": "用户列表",
+			"icon": "&#xe631;",
+			"href": "page/systemSetting/basicParameter.html",
+			"spread": false
+		}
+	],
+	"healthManagement": [
+		{
+			"title": "用户列表",
+			"icon": "&#xe631;",
+			"href": "page/systemSetting/basicParameter.html",
+			"spread": false
+		}
+	],
+	"freshManagement": [
+		{
+			"title": "用户列表",
+			"icon": "&#xe631;",
+			"href": "page/systemSetting/basicParameter.html",
+			"spread": false
+		}
+	],
+	"communityManagement": [
+		{
+			"title": "用户列表",
+			"icon": "&#xe631;",
+			"href": "page/systemSetting/basicParameter.html",
+			"spread": false
+		}
+	],
+	"serviceManagement": [
+		{
+			"title": "客服首页",
+			"icon": "&#xe634;",
+			"href": "/future/user/userList.html",
+			"spread": false
+		},
+		{
+			"title": "分组列表",
+			"icon": "&#xe634;",
+			"href": "/future/service/groupList.html",
+			"spread": false
+		},
+		{
+			"title": "客服列表",
+			"icon": "&#xe634;",
+			"href": "/future/service/userList",
+			"spread": false
+		},
+		{
+			"title": "客服设置",
+			"icon": "&#xe634;",
+			"href": "/future/login/test",
+			"spread": false
+		}
+	],
+	"seraphApi": [
+		{
+			"title": "三级联动模块",
+			"icon": "icon-mokuai",
+			"href": "page/doc/addressDoc.html",
+			"spread": false
+		},{
+			"title": "bodyTab模块",
+			"icon": "icon-mokuai",
+			"href": "page/doc/bodyTabDoc.html",
+			"spread": false
+		},{
+			"title": "三级菜单",
+			"icon": "icon-mokuai",
+			"href": "page/doc/navDoc.html",
+			"spread": false
+		}
+	]
+}
+
+
