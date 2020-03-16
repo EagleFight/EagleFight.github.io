@@ -9,7 +9,9 @@
 $(document).ready(function(){
 	$("button").click(function(){
 		$("#div1").load("test.csv",'',function(data){
+			var record = data.split(/\n/)
 		console.log(data);
+			console.log(record);
 		});
 	});
 });
